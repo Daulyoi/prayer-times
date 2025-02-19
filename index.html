@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-0">
+
+    <header class="bg-lime-400 h-fit font-bold text-center">
+        <h1 class="mt-auto mb-auto text-3xl font-bold">Prayer Times</h1>
+        <p class="text-base font-semibold " id="currentTime">Loading Current Time...</p>
+    </header>
+
+    <h1 id="msgContainer" class="text-center mt-4 mb-0 text-lg font-bold" style="display: none;">AAA</h1>
+
+    <main class="flex align-middle justify-center max-h-screen mt-12">
+        <table class="table-aut w-2/5 text-center">
+            <thead class="bg-lime-600">
+                <tr class="h-10">
+                    <th class="py-2">Prayer</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody class="bg-gray-100">
+                <tr class="h-5">
+                    <td>Fajr</td>
+                    <td id="Fajr">Loading...</td>
+                </tr>
+                <tr class="h-5">
+                    <td>Dhuhr</td>
+                    <td id="Dhuhr">Loading...</td>
+                </tr>
+                <tr class="h-5">
+                    <td>Asr</td>
+                    <td id="Asr">Loading...</td>
+                </tr>
+                <tr class="h-5">
+                    <td>Magrib</td>
+                    <td id="Magrib">Loading...</td>
+                </tr>
+                <tr class="h-5">
+                    <td>Isya</td>
+                    <td id="Isya">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./adhan-4.4.3/package/lib/bundles/adhan.umd.min.js"></script>
+    <script src="./logic.js"></script>
+</body>
+
+
+</html>
